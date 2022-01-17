@@ -1,0 +1,36 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": ""
+    },
+    {
+      "id": 2,
+      "email": "Admin",
+      "pass": "Admin"
+    },
+    {
+      "id": 3,
+      "email": "kent.bui207ktmt@hcmut.edu.vn"
+    },
+    {
+      "id": 4,
+      "email": "Bui Anh Kent"
+    },
+    {
+      "id": 5,
+      "email": "Anh Kent",
+      "pass": "08102002"
+    },
+    {
+      "id": 6,
+      "email": "Khanh Phuong",
+      "pass": "Phuongjandi2006"
+    },
+    {
+      "id": 7,
+      "email": "AnhKent",
+      "pass": "yeuKP"
+    }
+  ]
+}
