@@ -1,0 +1,46 @@
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .dropdown-btn {
+    width: 110px;
+    padding: 2px 5px;
+  }
+  .sign-in {
+    width: 70px;
+    padding: 7px 9px;
+  }
+  .right-content {
+    width: 50%;
+  }
+  .big_title {
+    width: 80%;
+    text-align: center;
+  }
+  .big_title h1 {
+    font-size: 1.8rem;
+  }
+  .slogan h1 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  .descripiton h1 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .input {
+    height: 20px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  .signin-form {
+    width: 80%;
+    height: 80%;
+  }
+  .signin_content {
+    padding: 32px;
+    margin-top: 50px;
+  }
+}

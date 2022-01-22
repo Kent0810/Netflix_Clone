@@ -1,0 +1,67 @@
+@media screen and (max-width: 420px) {
+  .sidebar {
+    width: 100vw;
+    height: 50px;
+    bottom: 0;
+  }
+  .sidebar-content {
+    flex-direction: row;
+    margin-top: 0;
+    height: 100%;
+  }
+  .banner {
+    height: 50%;
+    margin-left: 0;
+    background-size: cover;
+  }
+
+  .navbar {
+    height: 10%;
+    margin-left: 0;
+  }
+  .netflix-slider {
+    margin-left: 0;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  .navbar_content {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .banner-title {
+    font-size: 1.4rem;
+    width: 300px;
+  }
+  .banner-paragraph {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+  .banner-button {
+    padding: 0 1rem;
+  }
+  .movie_navigate_container {
+    width: 90%;
+  }
+  .search_mainContainer {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .search_result {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .use-keyboard-input {
+    width: 100%;
+  }
+  .netflix-slider {
+    width: 300px;
+    padding: 0 50px;
+  }
+  .swiper-slide img {
+    width: 150%;
+    height: 150%;
+  }
+}

@@ -238,12 +238,20 @@ var icon = {
 };
 var iframe = document.querySelector(".video-js")
 
-icon.fa_times.addEventListener("click", () => {
+function removeVideo(){
     movie_navigate_container.removeAttribute("id");
     myTimer = window.setInterval(ticker, 15000);
     movie_navigate_container.style.visibility = "hidden";
     movie_navigate_container.style.opacity = 0
     iframe.src = "";
+}
+
+
+icon.fa_times.addEventListener("click",removeVideo())
+document.addEventListener("keydown",(e)=>{
+    if(e.keyCode == 27){    
+        removeVideo();
+    }
 })
 var movie_title = document.querySelector(".movie_title")
 var movie_overview = document.querySelector(".movie_overview")

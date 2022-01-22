@@ -15,12 +15,13 @@
 }
 .keyboard_container {
   display: flex;
+  width: 100%;
   margin-top: 100px;
   justify-content: center;
 }
 .keyboard {
-  width: 50%;
-  height: 50%;
+  width: 300px;
+  height: 280px;
 }
 
 .keyboard_content {
