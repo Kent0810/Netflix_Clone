@@ -35,10 +35,12 @@
     font-size: 14px;
     padding: 0px 10px;
   }
+  .signup-form,
   .signin-form {
     width: 80%;
     height: 80%;
   }
+  .signup_content,
   .signin_content {
     padding: 32px;
     margin-top: 50px;

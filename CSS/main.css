@@ -204,6 +204,7 @@ a {
   font-size: 2rem;
   cursor: pointer;
 }
+.signup-form,
 .signin-form {
   position: absolute;
   z-index: 5;
@@ -221,13 +222,19 @@ a {
 }
 
 /* SIGN UP*/
+.signup_content {
+  padding: 0 70px;
+}
+.signup_content,
 .signin_content {
   margin-top: 100px;
 }
-
+.signup_content h1,
 .signin_content h1 {
   font-size: 2rem;
 }
+.userName_input,
+.userCountry_input,
 .sign_input,
 .pass_input {
   width: 100%;
@@ -237,6 +244,10 @@ a {
   margin-top: 20px;
   opacity: 1;
 }
+.userName_input::placeholder,
+.userCountry_input::placeholder,
+.userName_input:focus,
+.userCountry_inputt:focus,
 .sign_input::placeholder,
 .pass_input::placeholder,
 .sign_input:focus,
@@ -254,6 +265,7 @@ a {
   padding: 10px;
   cursor: pointer;
 }
+.signup_content_form,
 .signin_content_form {
   width: 100%;
 }

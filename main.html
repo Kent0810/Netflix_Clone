@@ -46,7 +46,7 @@
             <div class="email_input">
                 <form action="" class="input_email">
                     <label for="email"></label>
-                    <input type="text" id="email" name="email" placeholder="Email address" class="input">
+                    <input type="text" id="email" name="email" placeholder="Email address or Phone Number" class="input">
                     <div class="btn">
                         Sign Up<i class="fas fa-chevron-right"></i>
                     </div>
@@ -76,7 +76,31 @@
             </form>
         </div>
     </div>
+    <div class="signup-form">
+        <div class="signup_content">
+            <i class="fas fa-arrow-left"></i>
+            <h1>Sign Up</h1>
+            <form action="" class="signup_content_form">
+                <input type="text" name="name" placeholder="Full Name" class="userName_input" required>
+                <input type="text" name="country" placeholder="Country" class="userCountry_input" required>
+                <input type="text" name="email" placeholder="Email or Phone Number" class="sign_input signUp_input" required>
+                <input type="password" name="pass" placeholder="Password" class="pass_input"required>
+                <div class="sign_btn signUp_btn">
+                    Sign Up
+                </div>
+                <div class="password_helper">
+                    <div class="rememberMe">
+                        <input type="checkbox" id="remember" name="remember" value="Remember Me">
+                        <label for="vehicle1">Remember Me</label><br>
+                    </div>
+                    <div class="needHelp"> 
+                        Need Help?
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
-    <script src="/Netflix_Clone/getUSerJS.js"></script>   
+    <script src="/Netflix_Clone/dist/bundle.js"></script>   
 </html>
