@@ -4,211 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Swiper Js -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./CSS/index.css">
-    <link rel="stylesheet" href="./CSS/search.css">
-    <link rel="stylesheet" href="./CSS/responsiveIndex.css">
-    <link rel="shortcut icon" type="image/jpg" href="./img/Netflix-new-icon.png"/>
-    <!-- VIDEOJs -->
-    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="./Img/Netflix-new-icon.png" />
     <script src="https://kit.fontawesome.com/4eea540a2f.js" crossorigin="anonymous"></script>
-    <title>KENTFLIX</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/responsiveIndex.css">
+    <title>Kentflix Vietnam</title>
 </head>
 <body>
-    <div class="movie_navigate_container">
-        <div class="movie">
-            <!-- <i class="far fa-play-circle"></i> -->
-            <!-- <video id="my-video"  controls preload="auto" data-setup="{}">
-                <source src="https://www.youtube.com/watch?v=3iv2r_h3dYE" type="video/mp4" />
-            </video> -->
-            <iframe width="560" height="300" src="" class="video-js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="movie_details">
-            <h1 class="movie_title"></h1>
-            <p class="movie_overview"></p>
-            
-            <div class="close_btn">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-    </div>
-    <div class="netflix_body">
-        <div class="navbar">
-            <div class="navbar_content">
-                <h1 class="logo">KENTFLIX</h1>
+<div class="netflix-body">    
+    <div class="navbar">
+        <div class="navbar_content">
+            <h1 class="logo">KENTFLIX</h1>
+            <div class="right-content">
                 <div class="Catergory">
                     <div class="dropdown-btn">
-                        <h4>CATERGORY</h4>
+                        <h4><i class="fas fa-globe-americas"></i> English</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="dropdown-content">
-                       
+                        <h4>Vietnamese</h4>
+                        <h4>English</h4>
                     </div>
                 </div>
-                <h4>FETURES</h4>
-                <h4>PAGES</h4>
-            </div>
-        </div>
-        <div class="search_mainContainer">
-                <div class="keyboard_container">
-                    <div class="keyboard">
-                        <div class="keyboard_content">
-                            <span class="space_bar"><img src="./img/spacebar-svgrepo-com.svg" alt=""></span>
-                            <span class="back_space"><i class="fas fa-backspace"></i></span>
-                            <span class="a">a</span>
-                            <span class="b">b</span>
-                            <span class="c">c</span>
-                            <span class="d">d</span>
-                            <span class="e">e</span>
-                            <span class="f">f</span>
-                            <span class="g">g</span>
-                            <span class="h">h</span>
-                            <span class="i">i</span>
-                            <span class="j">j</span>
-                            <span class="k">k</span>
-                            <span class="l">l</span>
-                            <span class="m">m</span>
-                            <span class="n">n</span>
-                            <span class="o">o</span>
-                            <span class="p">p</span>
-                            <span class="q">q</span>
-                            <span class="r">r</span>
-                            <span class="s">s</span>
-                            <span class="t">t</span>
-                            <span class="u">u</span>
-                            <span class="v">v</span>
-                            <span class="w">w</span>
-                            <span class="x">x</span>
-                            <span class="y">y</span>
-                            <span class="z">z</span>
-                            <span class="1">1</span>
-                            <span class="2">2</span>
-                            <span class="3">3</span>
-                            <span class="4">4</span>
-                            <span class="5">5</span>
-                            <span class="6">6</span>
-                            <span class="7">7</span>
-                            <span class="8">8</span>
-                            <span class="9">9</span>
-                            <span class="0">0</span>
-                        </div>
-                    </div>
+                <div class="sign-in">
+                    Sign In
                 </div>
-                <div class="search_result">
-                    <div class="search_box">
-                        <textarea readonly class="use-keyboard-input"></textarea>
-                        
-                    </div>
-                    <img src="https://picsum.photos/300/200" alt="">
-                    <img src="https://picsum.photos/300/200" alt="">
-                    <img src="https://picsum.photos/300/200" alt="">
-                    <img src="https://picsum.photos/300/200" alt="">
-                    <img src="https://picsum.photos/300/200" alt="">
-                    <img src="https://picsum.photos/300/200" alt="">
-                </div>
-        </div>
-        <div class="sidebar">
-            <div class="sidebar-content">
-            <a href="#"><i class="fas fa-search"></i></a>
-            <a href="#"><i class="fas fa-home"></i></a>
-            <a href="#"><i class="fas fa-calendar"></i></a>
-            <a href="#"><i class="fas fa-tv"></i></a>
-            <a href="#"><i class="fas fa-plus"></i></a>
-            </div>
-        </div>
-        <!-- Banner -->
-        <div class="banner">
-            <div class="banner-content">
-                <h1 class="banner-title">Title</h1>
-                <div class="banner-paragraph">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto numquam molestias eveniet eius nisi! Magni ex atque deserunt ad aliquam! Ullam, expedita ratione. Quis dicta tempore at alias fugiat repellat aliquid libero quasi. Eaque iusto commodi, pariatur quidem nam fugit tenetur hic ratione distinctio esse soluta omnis? Eaque, odit id.
-                </div>
-                <div class="banner-play">
-                    <div class="banner-button banner-button-1">
-                        <i class="fas fa-play"></i>
-                        <h2>Play</h2>
-                    </div>
-                    <div class="banner-button banner-button-2">
-                        <i class="fas fa-info-circle"></i>
-                        <h2>More Info</h2>
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <div class="netflix-slider">
-            <div class="swiper mySwiper">
-                <div class="title">
-                    Kentflix Original
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-1"></div>
-                </div>
-                <!-- add arrow -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-        <div class="netflix-slider">
-            <div class="swiper mySwiper">
-                <div class="title">
-                    Popular On KENTFLIX
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                </div>
-                <!-- add arrow -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
-  
+    <div class="main-part">
+        <div class="center_infor">
+            <div class="big_title">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+            </div>  
+            <div class="slogan">
+                <h1>Watch anywhere. Cancel anytime.</h1>
+            </div>
+            <div class="descripiton">
+                <h1>Ready to watch? Enter your email to create or restart your membership.</h1>
+            </div>
+            <div class="email_input">
+                <form action="" class="input_email">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Email address or Phone Number" class="input">
+                    <div class="btn">
+                        Sign Up<i class="fas fa-chevron-right"></i>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div class="signin-form">
+        <div class="signin_content">
+            <i class="fas fa-arrow-left"></i>
+            <h1>Sign In</h1>
+            <form action="" class="signin_content_form">
+                <input type="text" name="email" placeholder="Email or phone number" class="sign_input" required>
+                <input type="password" name="email" placeholder="Password" class="pass_input"required>
+                <div class="sign_btn">
+                    Sign In
+                </div>
+                <div class="password_helper">
+                    <div class="rememberMe">
+                        <input type="checkbox" id="remember" name="remember" value="Remember Me">
+                        <label for="vehicle1">Remember Me</label><br>
+                    </div>
+                    <div class="needHelp"> 
+                        Need Help?
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="signup-form">
+        <div class="signup_content">
+            <i class="fas fa-arrow-left"></i>
+            <h1>Sign Up</h1>
+            <form action="" class="signup_content_form">
+                <input type="text" name="name" placeholder="Full Name" class="userName_input" required>
+                <input type="text" name="country" placeholder="Country" class="userCountry_input" required>
+                <input type="text" name="email" placeholder="Email or Phone Number" class="sign_input signUp_input" required>
+                <input type="password" name="pass" placeholder="Password" class="pass_input signUpPass_input" required>
+                <div class="sign_btn signUp_btn">
+                    Sign Up
+                </div>
+                <div class="password_helper">
+                    <div class="rememberMe">
+                        <input type="checkbox" id="remember" name="remember" value="Remember Me">
+                        <label for="vehicle1">Remember Me</label><br>
+                    </div>
+                    <div class="needHelp"> 
+                        Need Help?
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-</body> 
-
-<!-- Swiper JS -->
-<script src="./src/index.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="./src/getUSerJS.js"></script>   
 </html>

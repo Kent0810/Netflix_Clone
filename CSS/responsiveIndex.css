@@ -1,67 +1,48 @@
 @media screen and (max-width: 420px) {
-  .sidebar {
-    width: 100vw;
-    height: 50px;
-    bottom: 0;
-  }
-  .sidebar-content {
-    flex-direction: row;
-    margin-top: 0;
-    height: 100%;
-  }
-  .banner {
-    height: 50%;
-    margin-left: 0;
-    background-size: cover;
-  }
-
-  .navbar {
-    height: 10%;
-    margin-left: 0;
-  }
-  .netflix-slider {
-    margin-left: 0;
-  }
   .logo {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
-  .navbar_content {
-    width: 100%;
-    justify-content: space-evenly;
+  .dropdown-btn {
+    width: 110px;
+    padding: 2px 5px;
   }
-  .banner-title {
-    font-size: 1.4rem;
-    width: 300px;
+  .sign-in {
+    width: 70px;
+    padding: 7px 9px;
   }
-  .banner-paragraph {
-    width: 300px;
-    font-size: 0.8rem;
+  .right-content {
+    width: 50%;
   }
-  .banner-button {
-    padding: 0 1rem;
+  .big_title {
+    width: 80%;
+    text-align: center;
   }
-  .movie_navigate_container {
-    width: 90%;
+  .big_title h1 {
+    font-size: 1.8rem;
   }
-  .search_mainContainer {
-    margin-left: 0;
-    grid-template-columns: 1fr;
-    justify-content: center;
+  .slogan h1 {
+    font-size: 1.2rem;
+    font-weight: lighter;
   }
-  .search_result {
-    display: flex;
-    flex-direction: column;
+  .descripiton h1 {
+    font-size: 1rem;
+    font-weight: lighter;
   }
-
-  .use-keyboard-input {
-    width: 100%;
+  .input {
+    height: 20px;
   }
-  .netflix-slider {
-    width: 300px;
-    padding: 0 50px;
+  .btn {
+    font-size: 14px;
+    padding: 0px 10px;
   }
-  .swiper-slide img {
-    width: 150%;
-    height: 150%;
+  .signup-form,
+  .signin-form {
+    width: 80%;
+    height: 80%;
+  }
+  .signup_content,
+  .signin_content {
+    padding: 32px;
+    margin-top: 50px;
   }
 }

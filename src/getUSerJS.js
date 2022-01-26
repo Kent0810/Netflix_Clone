@@ -1,6 +1,4 @@
-import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInAnonymously } from "firebase/auth";
-import { getDatabase } from "firebase/database";
+
 const firebaseConfig = {
   apiKey: "AIzaSyC2-BYuwxbV3Gd5c8uCrkYUV2SvIwMA8xI",
   authDomain: "netflix-clone-99ba6.firebaseapp.com",
@@ -10,13 +8,10 @@ const firebaseConfig = {
   messagingSenderId: "818916190394",
   appId: "1:818916190394:web:0c32712f688d59266eba83"
 };
-const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-const database = getDatabase(app);
-console.log(auth);
-
-
-
+firebase.initializeApp(firebaseConfig);
+// Initialize variables
+const auth = firebase.auth()
+const database = firebase.database()
 var PostManAPI = "http://localhost:3000/user";
 
 function start(){
@@ -58,7 +53,7 @@ signUpbtnForm.addEventListener("click",()=>{
         email: document.querySelector(".signUp_input").value,
         name: document.querySelector(".userName_input").value,
         country: document.querySelector(".userCountry_input").value,
-        password: document.querySelector(".pass_input").value
+        password: document.querySelector(".signUpPass_input").value
     }
     if (validate_email(NewUserData.email) == false || validate_password((NewUserData.password) == false)){
         alert('Email or Password is Outta Line!!')
@@ -69,7 +64,7 @@ signUpbtnForm.addEventListener("click",()=>{
         alert('One or More Extra Fields is Outta Line!!')
         return
     }
-    createUserWithEmailAndPassword(auth,NewUserData.email,NewUserData.password)
+    auth.createUserWithEmailAndPassword(NewUserData.email,NewUserData.password)
         .then(()=>{ 
             var user = auth.currentUser;
             var database_ref = database.ref();
@@ -88,10 +83,8 @@ signUpbtnForm.addEventListener("click",()=>{
             // Firebase will use this to alert of its errors
             var error_code = error.code
             var error_message = error.message
-            alert(error_message)
+            console.log(error_message)
         })
-
-
     console.log("Sign Complete")
 })
 function signIn(){
