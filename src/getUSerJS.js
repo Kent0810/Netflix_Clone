@@ -87,9 +87,31 @@ signUpbtnForm.addEventListener("click",()=>{
         })
     console.log("Sign Complete")
 })
-function signIn(){
+var signInBtn = document.querySelector(".sign_btn");
+signInBtn.addEventListener("click",()=>{
+    var UserInput = {
+        email:document.querySelector(".signIn_email").value,
+        password:document.querySelector(".signIn_pass").value
+    }
+    auth.signInWithEmailAndPassword(UserInput.email,UserInput.password)
+        .then(()=>{
+            var user = auth.currentUser;
+            var database_ref=database.ref();
+            var user_data = {
+                last_login:Date.now()
+            }
+            database_ref.child('users/' + user.uid).update(user_data)
+            alert('User Logged In!!')
+            setTimeout(Redirect(),1000)
+        })
+        .catch((error)=> {
+            // Firebase will use this to alert of its errors
+            var error_code = error.code
+            var error_message = error.message
 
-}
+            alert(error_message)
+        })
+})
 function validate_email(email) {
   var expression = /^[^@]+@\w+(\.\w+)+\w$/
   if (expression.test(email) == true) {
@@ -167,7 +189,7 @@ function sendData(data){
 
 function Redirect() 
 {  
-    window.location="./index.html"; 
+    window.location="./main.html"; 
 }
 
 
