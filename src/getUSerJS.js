@@ -68,7 +68,8 @@ signUpbtnForm.addEventListener("click",()=>{
         .then(()=>{ 
             var user = auth.currentUser;
             var database_ref = database.ref();
-            var time = new Date().toISOString();
+            const DateNow = Date.now(); 
+            var time = new Date(DateNow).toString();
 
             var user_data = {
                 email : NewUserData.email,
@@ -97,7 +98,8 @@ signInBtn.addEventListener("click",()=>{
         .then(()=>{
             var user = auth.currentUser;
             var database_ref=database.ref();
-            var time = new Date().toISOString();
+            const DateNow = Date.now(); 
+            var time = new Date(DateNow).toString();
             var user_data = {
                 last_login: time
             }
