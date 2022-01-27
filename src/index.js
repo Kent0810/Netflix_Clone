@@ -247,7 +247,8 @@ function removeVideo(){
 }
 
 
-icon.fa_times.addEventListener("click",removeVideo())
+icon.fa_times.onclick = removeVideo();
+
 document.addEventListener("keydown",(e)=>{
     if(e.keyCode == 27){    
         removeVideo();

@@ -68,13 +68,13 @@ signUpbtnForm.addEventListener("click",()=>{
         .then(()=>{ 
             var user = auth.currentUser;
             var database_ref = database.ref();
-
+            var time = new Date().toISOString();
 
             var user_data = {
                 email : NewUserData.email,
                 full_name : NewUserData.name,
                 country :NewUserData.country,            
-                last_login : Date.now()
+                last_login : time
             }
             database_ref.child('users/' + user.uid).set(user_data)
             alert('User Created!!')
@@ -97,8 +97,9 @@ signInBtn.addEventListener("click",()=>{
         .then(()=>{
             var user = auth.currentUser;
             var database_ref=database.ref();
+            var time = new Date().toISOString();
             var user_data = {
-                last_login:Date.now()
+                last_login: time
             }
             database_ref.child('users/' + user.uid).update(user_data)
             alert('User Logged In!!')
