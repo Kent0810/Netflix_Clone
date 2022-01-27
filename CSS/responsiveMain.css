@@ -64,4 +64,8 @@
     width: 150%;
     height: 150%;
   }
+  .video-js {
+    z-index: 2;
+    object-fit: contain;
+  }
 }

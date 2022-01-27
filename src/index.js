@@ -228,7 +228,7 @@ function addingDropDownContent(genresName) {
 //Movie Box
 var movie_navigate_container = document.querySelector(".movie_navigate_container");
 var icon = {
-    fa_times: document.querySelector(".fa-times"),
+    fa_times: document.querySelector(".close_btn"),
     fa_play: document.querySelector(".banner-play"),
     fa_search: document.querySelector(".fa-search"),
     fa_home: document.querySelector(".fa-home"),
@@ -247,7 +247,13 @@ function removeVideo(){
 }
 
 
-icon.fa_times.onclick = removeVideo();
+icon.fa_times.addEventListener("click",()=>{
+    movie_navigate_container.removeAttribute("id");
+    myTimer = window.setInterval(ticker, 15000);
+    movie_navigate_container.style.visibility = "hidden";
+    movie_navigate_container.style.opacity = 0
+    iframe.src = "";
+})
 
 document.addEventListener("keydown",(e)=>{
     if(e.keyCode == 27){    
