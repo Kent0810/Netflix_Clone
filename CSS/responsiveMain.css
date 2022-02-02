@@ -82,4 +82,7 @@
   .logout_btn {
     margin: 0;
   }
+  .content__container {
+    padding: 0 15px;
+  }
 }

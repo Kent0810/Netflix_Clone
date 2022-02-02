@@ -65,7 +65,6 @@ signOut_btn.addEventListener('click',()=>{
         alert("User Logout...")
         // console.log(auth)
       }) 
-      window.location.reload() 
     }
   })
   
