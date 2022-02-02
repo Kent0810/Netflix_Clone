@@ -68,4 +68,18 @@
     z-index: 2;
     object-fit: contain;
   }
+  .user_information,
+  .user_container {
+    margin-left: 0;
+  }
+  .user_information {
+    display: flex;
+    flex-direction: column;
+  }
+  .info input {
+    width: 100%;
+  }
+  .logout_btn {
+    margin: 0;
+  }
 }

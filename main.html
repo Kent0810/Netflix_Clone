@@ -7,6 +7,7 @@
 
     <!-- Swiper Js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./CSS/loadingAnimation.css">
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/search.css">
     <link rel="stylesheet" href="./CSS/responsiveMain.css">
@@ -52,6 +53,7 @@
                 <h4>PAGES</h4>
             </div>
         </div>
+        
         <div class="search_mainContainer">
                 <div class="keyboard_container">
                     <div class="keyboard">
@@ -110,13 +112,35 @@
                     <img src="https://picsum.photos/300/200" alt="">
                 </div>
         </div>
+        <div class="user_container">
+            <div class="user_content">
+                <div class="user_avatar">
+                    <img src="./img/avatar/red.jpg" width="200px" height="100px" class="user_picture" alt="">
+                    <h1 class="user_name">NAME</h1>
+                </div>
+                <div class="user_information">
+                    <div class="info info_1">
+                        <input type="text" name="Id" placeholder="Full Name" class="user_id" readonly="readonly">
+                        <input type="text" name="Email" placeholder="Email" class="user_email" readonly="readonly">
+                    </div>
+                    <div class="info info_2">
+                        <input type="text" name="Country" placeholder="Country" class="user_country" readonly="readonly">
+                        <input type="text" name="Date" placeholder="Last Login" class="user_last_login" readonly="readonly">
+                    </div>
+                </div>
+                <div class="logout_btn">
+                    Log Out
+                </div>
+            </div>
+            
+        </div>
         <div class="sidebar">
             <div class="sidebar-content">
             <a href="#"><i class="fas fa-search"></i></a>
             <a href="#"><i class="fas fa-home"></i></a>
             <a href="#"><i class="fas fa-calendar"></i></a>
-            <a href="#"><i class="fas fa-tv"></i></a>
             <a href="#"><i class="fas fa-plus"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
             </div>
         </div>
         <!-- Banner -->
@@ -203,13 +227,37 @@
             </div>
         </div>
     </div>
-  
-
+    <div class="loadingScreen">
+        <div class="content">
+            <div class="content__container">
+                <p class="content__container__text">
+                    Welcome
+                </p>
+    
+                <ul class="content__container__list">
+                    <li class="content__container__list__item">Back!</li>
+                    <li class="content__container__list__item">Users!</li>
+                    <li class="content__container__list__item content__container__list__userName">Kent!</li>
+                    <li class="content__container__list__item">Everybody!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body> 
 
 <!-- Swiper JS -->
-<script src="./src/index.js"></script>
+<script src="./src/main.js"></script>
+<!-- MAJOR BUG IN SWIPERJS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+<!-- FIREBASE CDN app auth and RTD -->
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="./src/getCurrentUser.js"></script>
+
 
 </html>

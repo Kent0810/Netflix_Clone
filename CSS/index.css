@@ -233,6 +233,7 @@ a {
 .signin_content h1 {
   font-size: 2rem;
 }
+.userFullName_input,
 .userName_input,
 .userCountry_input,
 .sign_input,
@@ -244,8 +245,10 @@ a {
   margin-top: 20px;
   opacity: 1;
 }
+.userFullName_input::placeholder,
 .userName_input::placeholder,
 .userCountry_input::placeholder,
+.userFullName_input:focus,
 .userName_input:focus,
 .userCountry_inputt:focus,
 .sign_input::placeholder,
