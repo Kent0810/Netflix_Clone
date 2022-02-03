@@ -12,19 +12,6 @@ const banner = document.querySelector(".banner");
 const banner_title = document.querySelector(".banner-title")
 const banner_paragraph = document.querySelector(".banner-paragraph")
 
-function loadingScreen(){
-    var netflix_body = document.querySelector(".netflix_body");
-    var loadScreen = document.querySelector(".loadingScreen");
-    setTimeout(()=>{
-        netflix_body.style.visibility = "visible";
-        netflix_body.style.opacity = "1"
-        loadScreen.style.visibility = "hidden";
-        loadScreen.style.opacity = "0"
-    },7000)
-}
-
-loadingScreen();
-
 
 fetch('https://api.themoviedb.org/3/discover/tv?api_key=74c33f4d1e5b00eabcc5202866942c02&with_networks=213')
     .then(response => response.json())

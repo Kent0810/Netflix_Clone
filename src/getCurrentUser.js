@@ -11,14 +11,27 @@ firebase.initializeApp(firebaseConfig);
 // Initialize variables
 const auth = firebase.auth()
 const database = firebase.database()
+
 console.log(auth)
+
+
+
+var signOut_btn = document.querySelector(".logout_btn");
 auth.onAuthStateChanged((user) => {
+  console.log(user)
   if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
+    // User is signed in
     getUserData(user.uid)
+    loadingScreen();
+    signOut_btn.addEventListener('click',()=>{
+        auth.signOut().then(()=>{
+            alert("User Logout...")
+        }) 
+    })
   } 
+  else{
+    signOut_btn.textContent = "Log In"
+  }
 });
 
 function getUserData(uid) {
@@ -46,34 +59,22 @@ function getUserData(uid) {
     })
 }
 
-var signOut_btn = document.querySelector(".logout_btn");
+function loadingScreen(){
+    var netflix_body = document.querySelector(".netflix_body");
+    var loadScreen = document.querySelector(".loadingScreen");
+    setTimeout(()=>{
+        netflix_body.style.visibility = "visible";
+        netflix_body.style.opacity = "1"
+        loadScreen.style.visibility = "hidden";
+        loadScreen.style.opacity = "0"
+    },6000)
+}
 
-auth.onAuthStateChanged((user) => {
-  //if there's a user  
-  if (user) {
-      return
-  } 
-  else{
-    signOut_btn.textContent = "Log In"
-  }
-});
 
-signOut_btn.addEventListener('click',()=>{
-  auth.onAuthStateChanged((user)=>{
-    if(user){
-      auth.signOut().then(()=>{
-        alert("User Logout...")
-        // console.log(auth)
-      }) 
-    }
-  })
-  
-  // console.log(auth)    
-})
-
+/////////////////////SELF MADE Modifying the Auth state persistence
+//LOG OUT ON REFRESH/CLOSE TAB
 
 window.addEventListener("beforeunload", function (e) {
-
       // *********** perform database operation here
       // before closing the browser ************** //
       auth.signOut().then(()=>{
@@ -88,6 +89,7 @@ window.addEventListener("beforeunload", function (e) {
       },3000)
       return undefined;
 });
+
 
 
 
